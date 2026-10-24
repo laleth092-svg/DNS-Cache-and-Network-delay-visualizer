@@ -16,6 +16,23 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Auto-fallback: Only triggers if GitHub Pages serves this raw uncompiled repository root
+      (function() {
+        var scripts = document.getElementsByTagName('script');
+        var isUncompiled = false;
+        for (var i = 0; i < scripts.length; i++) {
+          if (scripts[i].src && scripts[i].src.indexOf('.tsx') !== -1) {
+            isUncompiled = true;
+            break;
+          }
+        }
+        if (isUncompiled && window.location.hostname.indexOf('github.io') !== -1 && !window.location.pathname.includes('/docs/')) {
+          var base = window.location.pathname.replace(/\/$/, '');
+          window.location.replace(window.location.origin + base + '/docs/');
+        }
+      })();
+    </script>
   </body>
 </html>
 

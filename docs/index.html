@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetScope DNS &amp; Network Delay Visualizer</title>
+    <meta name="description" content="Interactive computer networking simulator exploring multi-tier DNS caching, recursive vs iterative resolution, and the four fundamental network delays." />
+    <meta property="og:title" content="NetScope DNS &amp; Network Delay Visualizer" />
+    <meta property="og:description" content="Interactive computer networking simulator exploring multi-tier DNS caching, recursive vs iterative resolution, and the four fundamental network delays." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-C22dy_8T.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-3tFF27Qr.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      // Auto-fallback: Only triggers if GitHub Pages serves this raw uncompiled repository root
+      (function() {
+        var scripts = document.getElementsByTagName('script');
+        var isUncompiled = false;
+        for (var i = 0; i < scripts.length; i++) {
+          if (scripts[i].src && scripts[i].src.indexOf('.tsx') !== -1) {
+            isUncompiled = true;
+            break;
+          }
+        }
+        if (isUncompiled && window.location.hostname.indexOf('github.io') !== -1 && !window.location.pathname.includes('/docs/')) {
+          var base = window.location.pathname.replace(/\/$/, '');
+          window.location.replace(window.location.origin + base + '/docs/');
+        }
+      })();
+    </script>
+  </body>
+</html>
+
